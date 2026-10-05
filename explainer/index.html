@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="An interactive explanation of FedWAM: federating conditional predictive world knowledge for personalized robot control.">
+<meta name="color-scheme" content="light dark"><title>Inside FedWAM · An interactive project guide</title>
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('fedwam-theme')==='dark'?'dark':'light'}catch(e){}</script>
+<script defer src="model.js"></script><script defer src="data.js"></script><script defer src="scenes.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#stage">Skip to interactive explanation</a>
+<header class="topbar"><a class="brand" href="../" aria-label="FedWAM home"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 9L20 20 32 9M8 31L20 20 32 31"/><circle cx="20" cy="20" r="6"/><circle cx="8" cy="9" r="3"/><circle cx="32" cy="9" r="3"/><circle cx="8" cy="31" r="3"/><circle cx="32" cy="31" r="3"/></svg><strong>FedWAM<span class="brand-dot">.</span></strong></a><div class="top-subtitle">PREDICTIVE KNOWLEDGE · PRIVATE CONTROL</div><div class="top-actions"><button class="text-button" id="project-details">Project overview ↗</button><button id="theme" class="theme-button" aria-label="Switch to dark theme">◐ <span>Dark</span></button></div></header>
+<main class="shell">
+<div class="intro-line"><span class="eyebrow">AN INTERACTIVE PROJECT GUIDE</span><span class="tour-meta">7 chapters <i></i> 4 min 30 sec <i></i> Silent, self-paced</span></div>
+<nav id="chapters" class="chapters" aria-label="Project chapters"></nav>
+<section class="workbench" aria-label="FedWAM interactive explanation">
+<div class="workspace">
+<div class="stage-area">
+ <div class="stage-top"><span id="stage-context"></span><span id="badge" class="badge"></span></div>
+ <nav class="architecture" aria-label="Method locator"><button data-locate="1">Local WAM</button><span>→</span><button data-locate="1">Prediction packet</button><span>→</span><button data-locate="2">Server teacher</button><span>→</span><button data-locate="3">Private control</button></nav>
+ <div id="stage" class="stage" tabindex="-1"></div>
+ <div id="scene-controls" class="scene-controls" aria-label="Explore this chapter"></div>
+ <p id="scene-note" class="scene-note"></p>
+</div>
+<aside class="inspector">
+ <p id="kicker" class="eyebrow"></p><h1 id="heading"></h1><p id="subheading" class="subheading"></p><p id="description" class="description"></p>
+ <div id="formula" class="formula"></div><div id="inspector-live" class="inspector-live" aria-live="polite"></div>
+ <details id="technical"><summary>Inside this step <span>+</span></summary><p id="technical-copy"></p></details>
+ <button class="text-button evidence-button" id="evidence-open">Reference evaluation & recordings ↗</button>
+</aside>
+</div>
+<div class="caption"><span class="caption-tag">GUIDED TOUR</span><p id="caption"></p></div>
+<div class="playback"><button id="play" class="primary" aria-label="Play guided tour">▶ <span>Play tour</span></button><button id="prev" class="icon-button" aria-label="Previous chapter">←</button><button id="next" class="icon-button" aria-label="Next chapter">→</button><div class="timeline"><label for="seek"><span id="timeline-label">The question</span><output id="time">0:00 / 4:30</output></label><input id="seek" type="range" min="0" max="270" step="0.1" value="0" aria-label="Tour time"></div><label class="speed"><span class="sr-only">Playback speed</span><select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label><button class="text-button" id="reset">↺ Replay</button></div>
+</section>
+<footer><span>Federate predictive knowledge. Personalize actions.</span><span>Anonymous research supplement <b>·</b> <button id="scope">Recordings & details</button></span></footer>
+</main>
+<dialog id="dialog" aria-labelledby="dialog-title"><div class="dialog-head"><div><p class="eyebrow" id="dialog-kicker">PROJECT GUIDE</p><h2 id="dialog-title">Sources & recordings</h2></div><button id="close-dialog" class="icon-button" aria-label="Close dialog">✕</button></div><div id="dialog-content"></div></dialog>
+<noscript>This interactive guide requires JavaScript. All video recordings are available in the assets directory and no internet access is required.</noscript>
+</body></html>
